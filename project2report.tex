@@ -1,29 +1,77 @@
-% This is a simple sample document.  For more complicated documents take a look in the exercise tab. Note that everything that comes after a % symbol is treated as comment and ignored when the code is compiled.
+\documentclass{article}
 
-\documentclass{article} % \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document you are creating such as an article or a book, and begins the document preamble
+\usepackage{graphicx}
+\graphicspath{{assets/}} % images in /assets/ folder
 
-\usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code
-
-\title{Simple Sample} % Sets article title
-\author{My Name} % Sets authors name
+\title{Digital Logic Design Project 2} % Sets article title
+\author{Zidane Karim} % Sets authors name
 \date{\today} % Sets date for date compiled
 
 % The preamble ends with the command \begin{document}
 \begin{document} % All begin commands must be paired with an end command somewhere
     \maketitle % creates title using information in preamble (title, author, date)
     
-    \section{Hello World!} % creates a section
+    \section{Introduction} % creates a section
     
-    \textbf{Hello World!} Today I am learning \LaTeX. %notice how the command will end at the first non-alphabet charecter such as the . after \LaTeX
-     \LaTeX{} is a great program for writing math. I can write in line math such as $a^2+b^2=c^2$ %$ tells LaTexX to compile as math
-     . I can also give equations their own space: 
-    \begin{equation} % Creates an equation environment and is compiled as math
-    \gamma^2+\theta^2=\omega^2
-    \end{equation}
-    If I do not leave any blank lines \LaTeX{} will continue  this text without making it into a new paragraph.  Notice how there was no indentation in the text after equation (1).  
-    Also notice how even though I hit enter after that sentence and here $\downarrow$
-     \LaTeX{} formats the sentence without any break.  Also   look  how      it   doesn't     matter          how    many  spaces     I put     between       my    words.
+        
+    The assignment was to design a sequential logic circuit that can both write and read a byte into a RAM chip, to be displayed on an array of LED outputs. 
     
-    For a new paragraph I can leave a blank space in my code. 
+    In other words, the circuit should be able to take in an 8-bit input and store it in memory, and then be able to read that memory and display it on the LED array.
+    
+    For example, if the input is 10101000, the LED array should display the following configuration: $\downarrow$
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{LED_Output_Paint.png}
+    \end{center}
+
+    The heart of the problem is manipulating the data around the RAM chip, as it was a 1024x4 RAM chip, meaning it had 1024 memory locations, each with 4 bits of data.
+    
+    However, recall that the input is 8 bits, so we need to split the input into two 4-bit chunks to store in the RAM chip.
+    
+    The circuit should be able to write the first 4 bits into the RAM chip, and then write the second 4 bits into the RAM chip, and then read the data from the RAM chip and display it on the LED array.
+    
+    This manipulation of data is the main challenge of the project, which is why we turn to a sequential finite state machine to solve the problem.
+
+    \subsection{Outline}
+        \subsubsection{Methodology}
+
+        The circuit is divided into three main parts: the input, the RAM chip, and the output.
+        The essential issue in each was:
+        \begin{itemize}
+            \item Input: Automatically splitting the 8-bit input into two 4-bit chunks to write to the RAM chip in sequence 
+            \item RAM Chip: Keeping the data in memory and being able to read it back out without losing it/moments of gibberish
+            \item Output: Continously displaying the data on the LED array
+        \end{itemize}
+        \subsubsection{Implementation}
+        The vast majority of the circuit was implemented using TTL chips. The only exception was the bidirectional register used to hold the data which was a CMOS chip, requiring additional buffering.
+
+    \section{Methods}
+        \subsubsection{Theory}
+        The circuit was designed as two finite state machines, one for read and one for write:
+        \begin{itemize}
+            \item The \textbf{write FSM} would take in the 8-bit input and split it into two 4-bit chunks, writing them to the RAM chip in sequence.
+            \item The \textbf{read FSM} would read the data from the RAM chip and display it on the LED array.
+        \end{itemize}
+            
+        \textbf{Why do we use a finite state machine?}\\ 
+        
+        Because the circuit needs to be able to remember the state it is in, and then change states based on the input. This is the essence of a finite state machine.
+        The practical relation to the circuit is that the circuit needs to know whether it is in the write state or the read state, and then change addresses in the RAM chip accordingly.
+        based on the details of the state. 
+
+        This comes from the fact that the RAM chip has a limited address width (10 bits for 1024 locations), which requires control over address selection to store and retrieve the data correctly.
+
+        In addition to addresses, the RAM chip requires a write-enable signal to write data to memory. This signal is controlled by the write FSM, which is responsible for writing the data to the RAM chip in the correct sequence.
+
+        The design of the RAM chip has certain time-intervals where between address changes, the data written to memory is invalid/incorect. Because of this, the write FSM must be designed to wait for the correct time to write the data to memory, and then change the address to write the next data.
+
+        However, the timing intervals on the 2114 TTL RAM chip is measured in nanoseconds, which our clocks generated from 555-timers cannot feasibly reach due to equipment availability. Thus, this timing was not of much concern considering our RAM chip would never be able to reach the speeds required to cause a problem. 
+        Because of this, we do not really care about an idle state in both FSMs as the RAM chip will never be able to write/read data fast enough to cause a problem. But in my original thinking, I designed the states with an idle in mind.\\~\\
+
+        
+
+        To summarize, the finite state machines are responsible for selecting the correct address and enabling the read or write operation as required by the process:
+
+Hello Karim is here!!! Janjusvic, is haha gooone
 
 \end{document} % This is the end of the document
