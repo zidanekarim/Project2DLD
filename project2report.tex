@@ -1,6 +1,16 @@
 \documentclass{article}
 
 \usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
 \graphicspath{{assets/}} % images in /assets/ folder
 
 \title{Digital Logic Design Project 2} % Sets article title
@@ -10,7 +20,8 @@
 % The preamble ends with the command \begin{document}
 \begin{document} % All begin commands must be paired with an end command somewhere
     \maketitle % creates title using information in preamble (title, author, date)
-    
+    \tableofcontents
+
     \section{Introduction} % creates a section
     
         
@@ -22,9 +33,10 @@
 
     \begin{center}
         \includegraphics[width=0.5\textwidth]{LED_Output_Paint.png}
+        \captionof{figure}{LED Output for 10101000}
     \end{center}
 
-    The heart of the problem is manipulating the data around the RAM chip, as it was a 1024x4 RAM chip, meaning it had 1024 memory locations, each with 4 bits of data.
+    The heart of the problem is manipulating the data around the RAM chip, as it was a 1024$\times$4 RAM chip, meaning it had 1024 memory locations, each with 4 bits of data.
     
     However, recall that the input is 8 bits, so we need to split the input into two 4-bit chunks to store in the RAM chip.
     
@@ -71,7 +83,28 @@
         
 
         To summarize, the finite state machines are responsible for selecting the correct address and enabling the read or write operation as required by the process:
+        
+        \textbf{Why do we use external registers?}\\ 
 
-Hello Karim is here!!! Janjusvic, is haha gooone
+        The RAM chip has a 4-bit data width, which means it can only store 4 bits of data at a time. However, the input is 8 bits, which means we need to split the input into two 4-bit chunks to store in memory.
+
+        To do this, we use two 4-bit registers to hold the data before writing it to memory. The first register holds the first 4 bits of data, and the second register holds the second 4 bits of data.
+        Why do we use registers instead of reading from RAM directly?\\
+
+        This is because the RAM chip has a limited address width, which means we need to write the data to memory in the correct sequence. If we read the data from memory directly, we would not be able to control the sequence in which the data is written to memory.
+        In other words, we want to view all the data at once, not just the 4-bits at a time. The external registers also store the values inside so we can change the values on the dip switches, yet the values on the LED array remain the same since we have not written to the RAM.\\ 
+
+        \subsubsection{State Transitions}
+        
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{READ_State_Transition.png}
+            \captionof{figure}{Read State Transition Diagram}
+            \includegraphics[width=0.5\textwidth]{WRITE_State_Transition.png}
+            \captionof{figure}{Write State Transition Diagram}        
+        \end{center}
+
+        Above are the two state transiton diagrams for read and write respectively. 
+
+
 
 \end{document} % This is the end of the document
