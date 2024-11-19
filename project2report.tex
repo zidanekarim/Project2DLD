@@ -94,7 +94,7 @@
         This is because the RAM chip has a limited address width, which means we need to write the data to memory in the correct sequence. If we read the data from memory directly, we would not be able to control the sequence in which the data is written to memory.
         In other words, we want to view all the data at once, not just the 4-bits at a time. The external registers also store the values inside so we can change the values on the dip switches, yet the values on the LED array remain the same since we have not written to the RAM.\\ 
 
-        \subsubsection{State Transitions}
+        \subsubsection{State Transitions and Truth Tables}
         
         \begin{center}
             \includegraphics[width=0.5\textwidth]{READ_State_Transition.png}
@@ -103,8 +103,96 @@
             \captionof{figure}{Write State Transition Diagram}        
         \end{center}
 
-        Above are the two state transiton diagrams for read and write respectively. 
+        Above are the two state transiton diagrams for read and write respectively. Notice that they almost exactly the same, except the write FSM uses the write enable signal to write to memory, while the read FSM leaves it off the entire time.
+        These FSMs are Mealy Machines as outputs rely on the button presses as well as the original states. The essential logic of both FSMs is to stay idle until the button is pressed, which then cycles through the diagram. At each point, the machine switches addresses and either writes or reads.\\ 
+
+        Below is the truth table for the FSMs, which is used to create the Karnaugh Maps for the FSMs. The truth table is the same for both FSMs, except the write FSM has an additional output for the write enable signal.    
+        From this, we can derive logical expressions and then simplify them to create the FSM circuits.\\
+        \begin{minipage}{\textwidth}
+            \begin{center}
+            \includegraphics[width=1.2\textwidth]{READ_Truth_Table.png}
+            \captionof{figure}{Read Truth Table}
+            \includegraphics[width=1.2\textwidth]{WRITE_Truth_Table.png}
+            \captionof{figure}{Write Truth Table}        
+            \end{center}
+        \end{minipage}
+
+        \subsubsection{Boolean Expressions}
+        \begin{minipage}{\textwidth}
+            \begin{center}
+            %d1 = q1 xor q0
+            %d0 = RB or Q1 * !Q0
+            Read: 
+            \begin{itemize}
+                \item \( D_1 = Q_1 \oplus Q_0 \)
+                \item \( D_0 = (R_B + Q_1) \cdot \overline{Q_0} \)
+                \item \( OE = \overline{WE} \)
+            \end{itemize}
+            Write:
+            \begin{itemize}
+                \item \( D_1 = Q_1 \oplus Q_0 \)
+                \item \( D_0 = (W_B + Q_1) \cdot \overline{Q_0} \)
+                \item \( WE = Q_1\)
+            \end{itemize}
+            Both:
+            \begin{itemize}
+                \item \( A_0 = Q_0R + Q_0W \)
+                \item \( Mux Select =  Q_0R + Q_0W \)
+            \end{itemize}
 
 
+            \end{center}
+
+        The tri-state buffer controllers are connected to the write enable signal, because logically the RAM should only receive the inputs when write enable is on.\\\\
+        The mux select is connected to the address signal, because we want to select the proper address from the mux based on the state of the FSM.\\\\
+        Output enable does not actually exist on the RAM chip but it does in Logisim. It is connected to the inversion write enable signal, because we only want to read the data when the write enable signal is off.
+        Since WE is off by default, when we are not writing, we are reading. \\\\
+        The final puzzle to solve is the register clock. The register is not hooked up to the 555-timer clock, because then it would read on every clock, which we do not want. We only want to update the register's value to the LED when we press the read button.
+        Since the \(Q_0\) of Read controls the address, we can connect the output of \(Q_0\) to the first register and the inversion/negation of this signal to the other register. This way, when we press the read button, the register will update to the value of the LED array.\\ 
+        
+        \end{minipage}
+
+        \subsubsection{Functional Block Diagrams}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{FunctionalDiagram.png}
+            \captionof{figure}{Functional Block Diagram}
+        This follows the logic of the entire circuit. The input is split into two 4-bit chunks, which are then written to the RAM chip. The RAM chip is then read and displayed on the LED array through storage on the registers.\\
+        \end{center}
+
+        \subsubsection{Logic Diagrams}
+
+        \begin{center}
+            \includegraphics[width=1\textwidth]{Circuit.png}
+            \captionof{figure}{Entire Circuit}
+            \includegraphics[width=1\textwidth]{FSM_Circuits.png}
+            \captionof{figure}{Read and Write FSM Circuits}
+            \includegraphics[width=0.5\textwidth]{muxes.png}
+            \captionof{figure}{Muxes and Inputs}
+            \includegraphics[width=1\textwidth]{RAM.png}
+            \captionof{figure}{RAM Chip}
+            \includegraphics[width=1\textwidth]{Register.png}\
+            \captionof{figure}{Registers and Outputs}
+        \end{center}
+        
+        
+    \section{Implementation}  
+        \subsubsection{TTL-CMOS Interfacing}
+
+        
+    
+
+        \subsubsection{Components}
+        The circuit was implemented using the following components:
+        \begin{itemize}
+            \item 74LS161 4-bit counter
+            \item 74LS32 Quad OR gate
+            \item 74LS86 Quad XOR gate
+            \item 74LS00 Quad NAND gate
+            \item 74LS08 Quad AND gate
+            \item 74LS04 Hex inverter
+            \item 74LS139 Dual 2-to-4 decoder
+            \item 74
+            \item \\
+        \end{itemize}
 
 \end{document} % This is the end of the document

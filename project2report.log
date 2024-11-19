@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.12)  18 NOV 2024 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.12)  18 NOV 2024 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -222,7 +222,6 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
  (C:\Users\zkari\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 21.
- (project2report.out) (project2report.out)
 \@outlinefile=\write3
 \openout3 = `project2report.out'.
 
@@ -232,21 +231,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 23.
- (project2report.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
-)
+
+No file project2report.toc.
 \tf@toc=\write4
 \openout4 = `project2report.toc'.
 
-<assets/LED_Output_Paint.png, id=38, 520.19344pt x 112.92188pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 32.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 32.
+<assets/LED_Output_Paint.png, id=3, 520.19344pt x 112.92188pt>
 File: assets/LED_Output_Paint.png Graphic file (type png)
 <use assets/LED_Output_Paint.png>
 Package pdftex.def Info: assets/LED_Output_Paint.png  used on input line 35.
 (pdftex.def)             Requested size: 172.5pt x 37.44524pt.
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 36.
@@ -267,18 +265,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
+
+
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
@@ -293,7 +291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
  []
 
-<assets/READ_State_Transition.png, id=61, 402.75468pt x 304.13625pt>
+<assets/READ_State_Transition.png, id=32, 402.75468pt x 304.13625pt>
 File: assets/READ_State_Transition.png Graphic file (type png)
 <use assets/READ_State_Transition.png>
 Package pdftex.def Info: assets/READ_State_Transition.png  used on input line 100.
@@ -303,15 +301,11 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 101.
 See the caption package documentation for explanation.
 
-
-
-[3]
-<assets/WRITE_State_Transition.png, id=66, 411.78844pt x 295.85532pt>
+<assets/WRITE_State_Transition.png, id=33, 411.78844pt x 295.85532pt>
 File: assets/WRITE_State_Transition.png Graphic file (type png)
 <use assets/WRITE_State_Transition.png>
 Package pdftex.def Info: assets/WRITE_State_Transition.png  used on input line 102.
 (pdftex.def)             Requested size: 172.5pt x 123.93333pt.
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 103.
@@ -319,26 +313,194 @@ See the caption package documentation for explanation.
 
 
 
-[4 <./assets/READ_State_Transition.png> <./assets/WRITE_State_Transition.png>] (project2report.aux)
+[3 <./assets/READ_State_Transition.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
+
+ []
+
+<assets/READ_Truth_Table.png, id=41, 920.68968pt x 173.89969pt>
+File: assets/READ_Truth_Table.png Graphic file (type png)
+<use assets/READ_Truth_Table.png>
+Package pdftex.def Info: assets/READ_Truth_Table.png  used on input line 113.
+(pdftex.def)             Requested size: 413.99895pt x 78.1984pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 114.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 113--114
+ [] 
+ []
+
+<assets/WRITE_Truth_Table.png, id=42, 919.18407pt x 174.6525pt>
+File: assets/WRITE_Truth_Table.png Graphic file (type png)
+<use assets/WRITE_Truth_Table.png>
+Package pdftex.def Info: assets/WRITE_Truth_Table.png  used on input line 115.
+(pdftex.def)             Requested size: 413.99895pt x 78.66484pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 116.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 115--116
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--152
+
+ []
+
+
+
+[4 <./assets/WRITE_State_Transition.png> <./assets/READ_Truth_Table.png> <./assets/WRITE_Truth_Table.png>]
+<assets/FunctionalDiagram.png, id=53, 569.12625pt x 534.49687pt>
+File: assets/FunctionalDiagram.png Graphic file (type png)
+<use assets/FunctionalDiagram.png>
+Package pdftex.def Info: assets/FunctionalDiagram.png  used on input line 157.
+(pdftex.def)             Requested size: 345.0pt x 324.01999pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 158.
+See the caption package documentation for explanation.
+
+
+
+[5]
+<assets/Circuit.png, id=62, 665.48625pt x 691.08188pt>
+File: assets/Circuit.png Graphic file (type png)
+<use assets/Circuit.png>
+Package pdftex.def Info: assets/Circuit.png  used on input line 165.
+(pdftex.def)             Requested size: 345.0pt x 358.26796pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 166.
+See the caption package documentation for explanation.
+
+
+
+[6 <./assets/FunctionalDiagram.png>]
+<assets/FSM_Circuits.png, id=70, 484.05844pt x 507.39563pt>
+File: assets/FSM_Circuits.png Graphic file (type png)
+<use assets/FSM_Circuits.png>
+Package pdftex.def Info: assets/FSM_Circuits.png  used on input line 167.
+(pdftex.def)             Requested size: 345.0pt x 361.64702pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 168.
+See the caption package documentation for explanation.
+
+
+
+[7 <./assets/Circuit.png>]
+<assets/muxes.png, id=79, 158.09062pt x 378.66469pt>
+File: assets/muxes.png Graphic file (type png)
+<use assets/muxes.png>
+Package pdftex.def Info: assets/muxes.png  used on input line 169.
+(pdftex.def)             Requested size: 172.5pt x 413.21011pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 170.
+See the caption package documentation for explanation.
+
+
+
+[8 <./assets/FSM_Circuits.png>]
+<assets/RAM.png, id=86, 578.91281pt x 303.38344pt>
+File: assets/RAM.png Graphic file (type png)
+<use assets/RAM.png>
+Package pdftex.def Info: assets/RAM.png  used on input line 171.
+(pdftex.def)             Requested size: 345.0pt x 180.80008pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 172.
+See the caption package documentation for explanation.
+
+
+
+[9 <./assets/muxes.png>]
+<assets/Register.png, id=93, 554.07pt x 331.99031pt>
+File: assets/Register.png Graphic file (type png)
+<use assets/Register.png>
+Package pdftex.def Info: assets/Register.png  used on input line 173.
+(pdftex.def)             Requested size: 345.0pt x 206.71835pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 174.
+See the caption package documentation for explanation.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 179.
+
+
+
+[10 <./assets/RAM.png> <./assets/Register.png>]
+
+c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex:196: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196         \end
+                  {itemize}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+[11] (project2report.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-Package rerunfilecheck Info: File `project2report.out' has not changed.
-(rerunfilecheck)             Checksum: 2A1C7F0B1AAA70320ABF1D8DF5ED005F;784.
+
+
+Package rerunfilecheck Warning: File `project2report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `project2report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  559D6A60408A6D69EF18E9099A3BF8FE;1800.
  ) 
 Here is how much of TeX's memory you used:
- 9892 strings out of 473681
- 161556 string characters out of 5719194
- 555497 words of memory out of 5000000
- 32874 multiletter control sequences out of 15000+600000
+ 9971 strings out of 473681
+ 163323 string characters out of 5719194
+ 553497 words of memory out of 5000000
+ 32938 multiletter control sequences out of 15000+600000
  563266 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,408b,644s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\zkari\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on project2report.pdf (4 pages, 156428 bytes).
+ 75i,6n,79p,408b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\zkari\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on project2report.pdf (11 pages, 380242 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 72 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
