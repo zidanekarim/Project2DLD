@@ -176,23 +176,45 @@
         
         
     \section{Implementation}  
+        \subsubsection{Components}
+            The circuit was implemented using the following components:
+            \begin{itemize}
+                \item 2$\times$ D-Flip Flops (TTL)
+                \item 1 Quad XOR gate (TTL)
+                \item 1 Quad OR gate (TTL)
+                \item 1 Quad AND gate (TTL)
+                \item 1 Schmitt Trigger (TTL)
+                \item 2$\times$ 4-bit registers (CMOS)
+                \item 1 2114-IC RAM chip
+                \item Hex buffer w/ open collector (TTL)
+                \item 1 Quad 2:1 Multiplexer w/ built in buffer (TTL)
+                \item 2$\times$ Dip Switch
+                \item 2$\times$ button
+                \item 555-timer (TTL)
+                \item 8$\times$ LED
+                \item 2$\times$ Speaker
+            \end{itemize}
         \subsubsection{TTL-CMOS Interfacing}
+            Every chip used was TTL, except for the 4-bit registers. The registers were CMOS, which required additional buffering to interface with the TTL chips. This was done using a hex buffer with open collector outputs, which allowed the CMOS chip to interface with the TTL chips.
 
+            \textbf{Why do we need this buffering?}\\
+            The TTL-chips operate at a lower/more forigiving voltage threshold as compared to the CMOS chips. So if a TTL signal goes into a CMOS chip, the CMOS chip may not recognize the signal as a high or low, because the voltage is not high enough. 
+            The buffer fixes this problem, converting the TTL signal to a CMOS signal that the CMOS chip can recognize properly.\\    
         
+        \subsubsection{Circuit Pictures}
+        \includegraphics[width=1\textwidth]{CircuitLabeled.png}
+        \captionof{figure}{Labeled Circuit}
+
+    \section{Conclusion}  
+
+        \subsection{Results and Summary} 
+        The circuit worked well, with outputs not changing even if the dip switches changed (unless I wrote first.) 
+        Something I noticed was that the LED array would display the values of the dip switch on the first connection to power, but as soon as I 
+        wrote/read proper values, it worked as noirmal. \\\\
+        Once again, the initial question was to design a circuit that could write and read data to a RAM chip, and display it on an LED array. It should be able to take in an 8-bit input, split it into two 4-bit chunks, write them to memory, and then read them back out,
+        without losing information or displaying gibberish. This was achieved through the use of two finite state machines, one for write and one for read, which controlled the address selection and write enable signal for the RAM chip. The data was stored in two 4-bit registers before being written to memory, and then read back out and displayed on the LED array. 
     
 
-        \subsubsection{Components}
-        The circuit was implemented using the following components:
-        \begin{itemize}
-            \item 74LS161 4-bit counter
-            \item 74LS32 Quad OR gate
-            \item 74LS86 Quad XOR gate
-            \item 74LS00 Quad NAND gate
-            \item 74LS08 Quad AND gate
-            \item 74LS04 Hex inverter
-            \item 74LS139 Dual 2-to-4 decoder
-            \item 74
-            \item \\
-        \end{itemize}
+        
 
 \end{document} % This is the end of the document

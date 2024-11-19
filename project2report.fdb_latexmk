@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1731977098.32615 "c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex" "project2report.pdf" "project2report" 1731977099.44771 2
+["pdflatex"] 1731979880.4776 "c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex" "project2report.pdf" "project2report" 1731979882.81281 0
   "C:/Users/zkari/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1731963956 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/zkari/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1731469445 11548 61d30c5b23f887ab742acf520e1ba080 ""
   "C:/Users/zkari/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1731469180 11986955 5566d2c315a7f892526fd01eee9360a4 ""
@@ -75,6 +75,7 @@
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "assets/Circuit.png" 1731972071 63252 71f686a613d4bb60727168184cf2a4a0 ""
+  "assets/CircuitLabeled.png" 1731979620 23277490 d07a5e44db7e787e02f89a2cf8c8421c ""
   "assets/FSM_Circuits.png" 1731972090 33078 ef36e223bb9b32f8e9c4458974ec0000 ""
   "assets/FunctionalDiagram.png" 1731976049 49699 91688718d4ef89d7860dd2abf4b1595a ""
   "assets/LED_Output_Paint.png" 1731468259 3529 229fce9dc1e0963ee21e39db4606c860 ""
@@ -85,11 +86,11 @@
   "assets/WRITE_State_Transition.png" 1731474213 25205 aa6e8d2a168d834cca511bdcf56aaa21 ""
   "assets/WRITE_Truth_Table.png" 1731966309 22163 1482a6262a8c7da503fda623d3b7eafc ""
   "assets/muxes.png" 1731972111 13515 b8ce124d2b49f099138820c8797f018f ""
-  "c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex" 1731977098 11976 9ffbd486ba135028e9f8bbcbed89427d ""
-  "project2report.aux" 1731977099 3262 9f600c77022f365377b7d8c50b478129 "pdflatex"
-  "project2report.out" 1731977099 1800 559d6a60408a6d69ef18e9099a3bf8fe "pdflatex"
-  "project2report.tex" 1731977098 11976 9ffbd486ba135028e9f8bbcbed89427d ""
-  "project2report.toc" 1731977099 1114 09689ef564aca79fa0863c6e97c509fa "pdflatex"
+  "c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex" 1731979879 14256 59deb586850baf8cb053be0af1adb1e7 ""
+  "project2report.aux" 1731979882 3761 1952dfe63d7062f632fd51c07937c700 "pdflatex"
+  "project2report.out" 1731979882 2209 549e7ae2669fe6e076dea308fed307b0 "pdflatex"
+  "project2report.tex" 1731979879 14256 59deb586850baf8cb053be0af1adb1e7 ""
+  "project2report.toc" 1731979882 1360 b2bf72c951b7ee73f8b65a325a6324cc "pdflatex"
   (generated)
   "project2report.aux"
   "project2report.log"
