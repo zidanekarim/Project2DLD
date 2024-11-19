@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.12)  18 NOV 2024 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.12)  18 NOV 2024 20:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -241,7 +241,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `project2report.toc'.
 
-<assets/LED_Output_Paint.png, id=83, 520.19344pt x 112.92188pt>
+<assets/LED_Output_Paint.png, id=98, 520.19344pt x 112.92188pt>
 File: assets/LED_Output_Paint.png Graphic file (type png)
 <use assets/LED_Output_Paint.png>
 Package pdftex.def Info: assets/LED_Output_Paint.png  used on input line 35.
@@ -256,7 +256,7 @@ See the caption package documentation for explanation.
 
 [1
 
-{C:/Users/zkari/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./assets/LED_Output_Paint.png>]
+{C:/Users/zkari/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 61.
@@ -268,7 +268,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
 
 
-[2]
+[2 <./assets/LED_Output_Paint.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
@@ -296,7 +296,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
 
 [3]
-<assets/READ_State_Transition.png, id=110, 402.75468pt x 304.13625pt>
+<assets/READ_State_Transition.png, id=125, 402.75468pt x 304.13625pt>
 File: assets/READ_State_Transition.png Graphic file (type png)
 <use assets/READ_State_Transition.png>
 Package pdftex.def Info: assets/READ_State_Transition.png  used on input line 100.
@@ -307,7 +307,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 101.
 See the caption package documentation for explanation.
 
-<assets/WRITE_State_Transition.png, id=111, 411.78844pt x 295.85532pt>
+<assets/WRITE_State_Transition.png, id=126, 411.78844pt x 295.85532pt>
 File: assets/WRITE_State_Transition.png Graphic file (type png)
 <use assets/WRITE_State_Transition.png>
 Package pdftex.def Info: assets/WRITE_State_Transition.png  used on input line 102.
@@ -322,7 +322,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
-<assets/READ_Truth_Table.png, id=112, 920.68968pt x 173.89969pt>
+<assets/READ_Truth_Table.png, id=127, 920.68968pt x 173.89969pt>
 File: assets/READ_Truth_Table.png Graphic file (type png)
 <use assets/READ_Truth_Table.png>
 Package pdftex.def Info: assets/READ_Truth_Table.png  used on input line 113.
@@ -337,7 +337,7 @@ Overfull \hbox (68.99895pt too wide) in paragraph at lines 113--114
  [] 
  []
 
-<assets/WRITE_Truth_Table.png, id=113, 919.18407pt x 174.6525pt>
+<assets/WRITE_Truth_Table.png, id=128, 919.18407pt x 174.6525pt>
 File: assets/WRITE_Truth_Table.png Graphic file (type png)
 <use assets/WRITE_Truth_Table.png>
 Package pdftex.def Info: assets/WRITE_Truth_Table.png  used on input line 115.
@@ -377,7 +377,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--152
 
 
 [5 <./assets/READ_Truth_Table.png> <./assets/WRITE_Truth_Table.png>]
-<assets/FunctionalDiagram.png, id=130, 569.12625pt x 534.49687pt>
+<assets/FunctionalDiagram.png, id=145, 569.12625pt x 534.49687pt>
 File: assets/FunctionalDiagram.png Graphic file (type png)
 <use assets/FunctionalDiagram.png>
 Package pdftex.def Info: assets/FunctionalDiagram.png  used on input line 157.
@@ -391,7 +391,7 @@ See the caption package documentation for explanation.
 
 
 [6]
-<assets/Circuit.png, id=138, 665.48625pt x 691.08188pt>
+<assets/Circuit.png, id=153, 665.48625pt x 691.08188pt>
 File: assets/Circuit.png Graphic file (type png)
 <use assets/Circuit.png>
 Package pdftex.def Info: assets/Circuit.png  used on input line 165.
@@ -405,7 +405,7 @@ See the caption package documentation for explanation.
 
 
 [7 <./assets/FunctionalDiagram.png>]
-<assets/FSM_Circuits.png, id=146, 484.05844pt x 507.39563pt>
+<assets/FSM_Circuits.png, id=161, 484.05844pt x 507.39563pt>
 File: assets/FSM_Circuits.png Graphic file (type png)
 <use assets/FSM_Circuits.png>
 Package pdftex.def Info: assets/FSM_Circuits.png  used on input line 167.
@@ -419,7 +419,7 @@ See the caption package documentation for explanation.
 
 
 [8 <./assets/Circuit.png>]
-<assets/muxes.png, id=153, 158.09062pt x 378.66469pt>
+<assets/muxes.png, id=168, 158.09062pt x 378.66469pt>
 File: assets/muxes.png Graphic file (type png)
 <use assets/muxes.png>
 Package pdftex.def Info: assets/muxes.png  used on input line 169.
@@ -433,7 +433,7 @@ See the caption package documentation for explanation.
 
 
 [9 <./assets/FSM_Circuits.png>]
-<assets/RAM.png, id=160, 578.91281pt x 303.38344pt>
+<assets/RAM.png, id=175, 578.91281pt x 303.38344pt>
 File: assets/RAM.png Graphic file (type png)
 <use assets/RAM.png>
 Package pdftex.def Info: assets/RAM.png  used on input line 171.
@@ -447,7 +447,7 @@ See the caption package documentation for explanation.
 
 
 [10 <./assets/muxes.png>]
-<assets/Register.png, id=167, 554.07pt x 331.99031pt>
+<assets/Register.png, id=182, 554.07pt x 331.99031pt>
 File: assets/Register.png Graphic file (type png)
 <use assets/Register.png>
 Package pdftex.def Info: assets/Register.png  used on input line 173.
@@ -469,7 +469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--203
 
  []
 
-<assets/CircuitLabeled.png, id=176, 2276.505pt x 3035.34pt>
+<assets/CircuitLabeled.png, id=191, 2276.505pt x 3035.34pt>
 File: assets/CircuitLabeled.png Graphic file (type png)
 <use assets/CircuitLabeled.png>
 Package pdftex.def Info: assets/CircuitLabeled.png  used on input line 205.
@@ -492,29 +492,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--216
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 211--216
+
+ []
+
+
 
 [13 <./assets/CircuitLabeled.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
-[14] (project2report.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
+
+ []
+
+
+
+[14]
+
+[15] (project2report.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `project2report.out' has not changed.
-(rerunfilecheck)             Checksum: 549E7AE2669FE6E076DEA308FED307B0;2209.
+(rerunfilecheck)             Checksum: 13A165E940CB31D55AA7C67352973B8B;2614.
  ) 
 Here is how much of TeX's memory you used:
- 10012 strings out of 473681
- 164262 string characters out of 5719194
- 557499 words of memory out of 5000000
- 32966 multiletter control sequences out of 15000+600000
- 563266 words of font info for 53 fonts, out of 8000000 for 9000
+ 10021 strings out of 473681
+ 164380 string characters out of 5719194
+ 558499 words of memory out of 5000000
+ 32970 multiletter control sequences out of 15000+600000
+ 563612 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,434b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\zkari\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on project2report.pdf (14 pages, 22962940 bytes).
+ 75i,6n,79p,435b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\zkari\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on project2report.pdf (15 pages, 22976948 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 279 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

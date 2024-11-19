@@ -14,3 +14,6 @@
 \contentsline {subsubsection}{\numberline {3.0.3}Circuit Pictures}{13}{subsubsection.3.0.3}%
 \contentsline {section}{\numberline {4}Conclusion}{14}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Results and Summary}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Limitations}{14}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Future Work}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Additonal Functionality}{15}{subsection.4.4}%

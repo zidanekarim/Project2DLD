@@ -206,6 +206,7 @@ INPUT .\assets\CircuitLabeled.png
 INPUT .\assets\CircuitLabeled.png
 INPUT .\assets\CircuitLabeled.png
 INPUT .\assets\CircuitLabeled.png
+INPUT C:\Users\zkari\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT project2report.aux
 INPUT .\project2report.out
 INPUT .\project2report.out
@@ -233,3 +234,5 @@ INPUT C:\Users\zkari\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\zkari\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\zkari\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\zkari\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\zkari\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\zkari\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb

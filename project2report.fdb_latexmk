@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1731979880.4776 "c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex" "project2report.pdf" "project2report" 1731979882.81281 0
+["pdflatex"] 1731980544.98027 "c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex" "project2report.pdf" "project2report" 1731980547.30112 0
   "C:/Users/zkari/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1731963956 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/zkari/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1731469445 11548 61d30c5b23f887ab742acf520e1ba080 ""
   "C:/Users/zkari/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1731469180 11986955 5566d2c315a7f892526fd01eee9360a4 ""
@@ -18,6 +18,7 @@
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
+  "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1247596667 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
@@ -29,6 +30,7 @@
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1247596666 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/zkari/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/zkari/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
@@ -86,11 +88,11 @@
   "assets/WRITE_State_Transition.png" 1731474213 25205 aa6e8d2a168d834cca511bdcf56aaa21 ""
   "assets/WRITE_Truth_Table.png" 1731966309 22163 1482a6262a8c7da503fda623d3b7eafc ""
   "assets/muxes.png" 1731972111 13515 b8ce124d2b49f099138820c8797f018f ""
-  "c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex" 1731979879 14256 59deb586850baf8cb053be0af1adb1e7 ""
-  "project2report.aux" 1731979882 3761 1952dfe63d7062f632fd51c07937c700 "pdflatex"
-  "project2report.out" 1731979882 2209 549e7ae2669fe6e076dea308fed307b0 "pdflatex"
-  "project2report.tex" 1731979879 14256 59deb586850baf8cb053be0af1adb1e7 ""
-  "project2report.toc" 1731979882 1360 b2bf72c951b7ee73f8b65a325a6324cc "pdflatex"
+  "c:/Users/zkari/ZidaneSchool/School/Cooper/DLD/project2report.tex" 1731980542 16099 88ee521b222611c4248df9398979353c ""
+  "project2report.aux" 1731980547 4130 b3da4aa304ba09f638b6ddd13ac9dfca "pdflatex"
+  "project2report.out" 1731980547 2614 13a165e940cb31d55aa7c67352973b8b "pdflatex"
+  "project2report.tex" 1731980542 16099 88ee521b222611c4248df9398979353c ""
+  "project2report.toc" 1731980547 1606 96464a74b2bbf8759ebc7f5daa92addb "pdflatex"
   (generated)
   "project2report.aux"
   "project2report.log"

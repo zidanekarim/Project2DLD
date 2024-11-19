@@ -212,9 +212,27 @@
         Something I noticed was that the LED array would display the values of the dip switch on the first connection to power, but as soon as I 
         wrote/read proper values, it worked as noirmal. \\\\
         Once again, the initial question was to design a circuit that could write and read data to a RAM chip, and display it on an LED array. It should be able to take in an 8-bit input, split it into two 4-bit chunks, write them to memory, and then read them back out,
-        without losing information or displaying gibberish. This was achieved through the use of two finite state machines, one for write and one for read, which controlled the address selection and write enable signal for the RAM chip. The data was stored in two 4-bit registers before being written to memory, and then read back out and displayed on the LED array. 
+        without losing information or displaying gibberish. This was achieved through the use of two finite state machines, one for write and one for read, which controlled the address selection and write enable signal for the RAM chip. The data was stored in two 4-bit registers before being written to memory, and then read back out and displayed on the LED array.\\
+
     
-
+        My solution utilized TTL chips for the majority of the circuit, with the exception of the 4-bit registers, which were CMOS. The CMOS registers required additional buffering to interface with the TTL chips, which was achieved using a hex buffer with open collector outputs.\\
         
+        \subsection{Limitations}
 
-\end{document} % This is the end of the document
+        My circuit could have combined the two finite state machines with some additional logic. This would have reduced my wiring, but I realized 
+        that it would not have really changed the number of chips I used, so by the time I had started wiring it wasn't worth switching.\\
+
+        The RAM chip used could be more efficient, since it was wasting a lot of resources. However, this ties into the next portion. 
+
+        \subsection{Future Work}
+
+        This circuit could be scaled into more LEDs by simply expanding the range of dip switches used and the number of registers, as well as unlocking more addresses. \\
+        There are total 1024 addresses available for use, so for use in a larger circuit more of these addresses could be used. Of course to achieve this, the FSMs must take on more states (assuming no idle states and \textit{n} addresses, \textit{n} states are required).\\
+
+
+        \subsection{Additonal Functionality}
+
+        The circuit utilizes two speakers connected to the write and read FSMs. The speakers are connected to the outputs of the FSMs, so that when the FSMs are in the write or read state, the speakers will produce a sound. This is a simple way to provide feedback to the user that the circuit is working correctly when they press a button.\\\\
+        I also attempted to use a potentiometer to control the speed of the clock, but I was unable to get it to work. I believe this was due to the fact that the potentiometer was not reaching high enough frequencies to control the clock.\\
+
+\end{document} 
